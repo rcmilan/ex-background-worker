@@ -4,7 +4,7 @@
     {
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            while (true)
+            while (!stoppingToken.IsCancellationRequested)
             {
                 Console.WriteLine("DateTime: {0}", DateTime.Now);
 

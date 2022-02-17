@@ -15,7 +15,7 @@ namespace ConsoleWorker.Services
         {
             int count = 0;
 
-            while (true)
+            while (!stoppingToken.IsCancellationRequested)
             {
                 Console.WriteLine("{0}", _textService.GenerateA(count));
 
