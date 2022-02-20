@@ -13,3 +13,5 @@ IHost host = Host.CreateDefaultBuilder(args)
     .Build();
 
 await host.RunAsync();
+
+// Importante: <Project Sdk="Microsoft.NET.Sdk.Worker">
