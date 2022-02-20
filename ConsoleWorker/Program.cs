@@ -8,6 +8,7 @@ IHost host = Host.CreateDefaultBuilder(args)
 
         services.AddHostedService<DateTimeService>();
         services.AddHostedService<CounterService>();
+        services.AddHostedService<InputService>();
 
     })
     .Build();
